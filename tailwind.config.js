@@ -29,7 +29,11 @@ module.exports = {
       lineHeight: {
         'extra-loose': '2.5',
         '12': '3rem',
-      }
+      },
+      animation: {
+        bounce200: 'bounce 1s infinite 200ms',
+        bounce400: 'bounce 1s infinite 400ms',
+    },
     },
   },
   plugins: [],
