@@ -58,7 +58,7 @@
 
 .BordLeft:hover{
   border-left: 2px solid transparent;
-  box-shadow: #519e5179 1px 1px 60px -30px;
+  box-shadow: #ffffff 1px 1px 60px -30px;
   transition: all ease-in-out 0.5s;
 
 }

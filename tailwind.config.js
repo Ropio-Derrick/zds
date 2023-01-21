@@ -25,6 +25,10 @@ module.exports = {
 
         // Complex site-specific row configuration
         'layout': '200px minmax(900px, 1fr) 100px',
+      },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '3rem',
       }
     },
   },
