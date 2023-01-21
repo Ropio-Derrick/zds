@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary{
+    color:#519e51 ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.primary1{
+  color:rgba(255, 255, 255, 0.774);
+}
+
+.primary1:hover{
+  color:#519e51 ;
+}
+
+
+.Primary{
+  color:#519e51 ;
+}
+
+.Bgprimary{
+  margin-top: 20px;
+  background-color:#fff ;
+  transition:all ease-in-out 0.5s ;
+  outline: none;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  padding: 10px;
+}
+
+.Bgprimary:hover{
+  transition:all ease-in-out 0.5s ;
+  background-color:#519e51 ;
+  color: black;
+
+}
+
+
+
+
+.transition{
+  transition:all ease-in-out 0.5s ;
+}
+
+.transition:hover{
+  transition:all ease-in-out 0.5s ;
+}
+
+.BordLeft{
+  border-left: 2px solid white;
+  transition: all ease-in-out 0.5s;
+
+}
+
+.BordLeft:hover{
+  border-left: 2px solid transparent;
+  box-shadow: #519e5179 1px 1px 60px -30px;
+  transition: all ease-in-out 0.5s;
+
+}
+
+.Icons{
+  font-size: 40px !important;
+  color:#519e51 ;
+  transition: all ease-in-out 0.7s;
+
+}
+.Icons:hover{
+  color:#fff ;
+  scale: 103%;
+  box-shadow: rgba(255, 255, 255, 0.137) 1px 1px 80px 0px;
+  transition: all ease-in-out 0.7s;
+
+}
+
+.Icon{
+  font-size: 20px !important;
+  color:#519e51;
 }
