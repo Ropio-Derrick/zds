@@ -10,7 +10,7 @@ import Footer from "./House/Footer/Footer";
 let App = ()=>{
   return(
     <div>
-      {/* <Navbar className="NavbarSet" /> */}
+      <Navbar className="NavbarSet" />
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="about" element={ <About/> } />
