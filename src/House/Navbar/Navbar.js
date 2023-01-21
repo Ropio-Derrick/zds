@@ -87,25 +87,25 @@ const Navbar =()=>{
             <div className="flex relative ">
                     {toggleMenu
                     ? <AiOutlineClose fontSize={28} className="text-transparent md:hidden cursor-pointer" onClick={()=>setToggleMenu(false)}/>:
-                    <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer" onClick={()=>setToggleMenu(true)} />
+                    <HiMenuAlt4 fontSize={28} className="text-black md:hidden cursor-pointer" onClick={()=>setToggleMenu(true)} />
                     }
                     {toggleMenu && (
-                        <ul className="z-10 fixed top-0 -right-2  p-3 width-[70vh] h-screen shadow-2xl md:hidden list-none
-                        flex flex-col justify-start items-end round-md  blue-glassmorphism text-white animate-slide-in 
+                        <ul className="z-10 fixed top-0 -right-2  p-3 width-screen h-screen shadow-2xl md:hidden list-none
+                        flex flex-col justify-start items-end round-md  bg-[#519e51] text-white animate-slide-in 
                         " >
                             <li className="text-xl w-full my-2 " >
                                 <AiOutlineClose onClick={()=>setToggleMenu(false) } />
                             </li>
                             {[
-                               <Link to="/" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 ' >
+                               <Link to="/" className='no-underline text-lg text-white  hover:text-black duration-300 ease-in-out delay-300 ' >
                                  Home</Link>,
-                               <Link to="/about" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 '  >
+                               <Link to="/about" className='no-underline text-lg text-white  hover:text-black duration-300 ease-in-out delay-300 '  >
                                  Safari</Link>,
-                               <Link to="/contact" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 ' >
+                               <Link to="/contact" className='no-underline text-lg text-white  hover:text-black duration-300 ease-in-out delay-300 ' >
                                 Safari & Style</Link>,
-                               <Link to="/about" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 ' >
+                               <Link to="/about" className='no-underline text-lg text-white   hover:text-black duration-300 ease-in-out delay-300 ' >
                                   About</Link>,
-                               <Link to="/contact" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 '  >
+                               <Link to="/contact" className='no-underline text-lg text-white hover:text-black duration-300 ease-in-out delay-300 '  >
                                  Contact</Link>,
                             ].map((item,index)=>(
 
