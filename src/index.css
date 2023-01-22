@@ -91,3 +91,10 @@
 .red-circle{
   animation-delay: 0.3s;
 }
+
+.background{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}

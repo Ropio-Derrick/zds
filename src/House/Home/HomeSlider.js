@@ -1,95 +1,34 @@
 import React from 'react'
-
-// import photos
-import Diani from "../../Images/Diani.jpg"
-import Kenya from "../../Images/home2.jpg"
-import Nairobi from "../../Images/hOME3.jpg"
-import Mombasa from "../../Images/HOME4.jpg"
-
-
-// import Swiper core and required modules
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y,Autoplay,Zoom ,EffectFade} from 'swiper';
-import { Swiper, SwiperSlide } from "swiper/react";
-
-
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/zoom';
-
-
-SwiperCore.use([ Navigation, Pagination, Scrollbar, A11y,Autoplay,Zoom ,EffectFade]);
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+import 'react-awesome-slider/dist/styles.css';
+import Imga from "../../Images/Home1.jpg"
+import Imgb from "../../Images/hOME3.jpg"
+import Imgc from "../../Images/HOME4.jpg"
 
 function HomeSlider() {
 
-    const Landstyles ={
-        backgd:{
-           height:'480px',
-            width:'100%',
-            backgroundPosition:'center',
-            backgroundSize:'contain',
-        },
-        Linker:{
-            color:'#519e51',
-            textDecoration:'none',
-            paddingLeft:'5px',
-            paddingRight:'15px',
-            fontSize:'20px'
-        }
-    }
-
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   return (
-    <Swiper 
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff"
-        }}
-        spaceBetween={0}
-        loop={true}
-        centeredSlides={true}
-        zoom={true}
-        effect={"fade"}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-       
-        modules={[ Navigation, Pagination, Scrollbar, A11y,Autoplay,Zoom ,EffectFade]}
-        
+    <AutoplaySlider className='h-[540px] xs-full sm:h-full top-0 '
+    play={true}
+    cancelOnInteraction={false} // should stop playing on user interaction
+    interval={6000}
   >
-    <SwiperSlide>
-      <div className="swiper-zoom-container" >
-        <img src={Kenya} styles={Landstyles.backgd} />
-      </div>     
-    </SwiperSlide>
-    <SwiperSlide>
-      <div className="swiper-zoom-container" >
-        <img src={Mombasa} styles={Landstyles.backgd} />
-      </div>     
-    </SwiperSlide>
-    <SwiperSlide>
-      <div className="swiper-zoom-container" >
-        <img src={Nairobi} styles={Landstyles.backgd} />
-      </div>     
-    </SwiperSlide>
-    <SwiperSlide>
-      <div className="swiper-zoom-container" >
-        <img src={Diani} styles={Landstyles.backgd} />
-      </div>     
-    </SwiperSlide>
+    <div className='background top-0 '>
+      <img src={Imga} className='  background bg-left-bottom' />
+    </div>
+    <div className='background  top-0 ' >
+      <img src={Imgb} className='  background bg-right-bottom' />
 
+    </div>
+    <div className=' background  top-0 ' >
+      <img src={Imgc} className='background   bg-center-bottom' />
 
-  
-    ...
-  </Swiper>
+    </div>
+
+  </AutoplaySlider>
   )
 }
 

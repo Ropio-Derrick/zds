@@ -6,8 +6,8 @@ import Searcher from './Searcher'
 let Home = ()=> {
   return (
     <div>
-          {/* <HomeSlider/>
-          <Searcher/> */}
+           <HomeSlider/>
+          {/* <Searcher/> */}
     </div>
   )
 }
