@@ -11,7 +11,7 @@ function HomeSlider() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   return (
-    <AutoplaySlider className='h-[540px]  xs:h-[400px] sm:h-[400px]  top-0 '
+    <AutoplaySlider className='z-30 h-screen  xs:h-[screen] sm:h-screen top-0 '
     play={true}
     cancelOnInteraction={false} // should stop playing on user interaction
     interval={6000}

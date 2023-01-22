@@ -97,3 +97,22 @@
   background-size: contain;
   width: 100%;
 }
+
+.PhotoCrease{
+  position: reltive;
+overflow: hidden;
+ height: 130px;
+}
+
+
+.Scaler{
+
+  transform: translateY(0px);
+}
+
+
+.Scaler:hover{
+  height: 430px;
+
+  transform: translateY(-200px);
+}

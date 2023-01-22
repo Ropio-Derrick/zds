@@ -7,7 +7,7 @@ let Home = ()=> {
   return (
     <div>
            <HomeSlider/>
-          {/* <Searcher/> */}
+          <Searcher/>
     </div>
   )
 }
