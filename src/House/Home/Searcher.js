@@ -4,18 +4,18 @@ import  Jeep from "../../Images/jeep.jpg"
 
 function Searcher() {
   return (
-    <div className=' border-black  border-4 rounded-2xl  relative mt-[-130px]  mx-[100px] md:mx-[100px]  z-50  xs:mx-4 grid grid-cols-2 items-center width-full height-20' >
-        <div className=' PhotoCrease  rounded-tl-2xl bg-blue-900 flex flex-1 flex-col items-left justify-start'>
-            <img src={Jeep} className="Scaler  rounded-tl-2xl " />
+    <div className='  mb-16 rounded-2xl gap-4 relative mt-[-100px]  mx-[100px] md:mx-[100px]  z-50  xs:mx-4 grid grid-cols-4 md:grid-cols-2 xs:grid-cols-1  items-center width-full ' >
+        <div className='flex justify-center items-center  shadow-2xl shadow-black  h-[200px] rounded-2xl bg-white flex flex-1 flex-col items-left justify-start'>
+          <h1 className="text-center text-4xl md:text-3xl   " > <span className="font-bold" > New</span> Destinations</h1>
         </div>
-        <div className='PhotoCrease   bg-blue-900 flex flex-1 flex-col rounded-tr-2xl items-left justify-start'>
-        <img src={Zebra} className="Scaler  rounded-tr-2xl" />
+        <div className='flex justify-center items-center shadow-2xl shadow-black    h-[200px]  bg-white flex flex-1 flex-col rounded-2xl items-left justify-start'>
+          <h1 className="text-center text-4xl md:text-3xl " > <span className="font-bold" > Safe</span> Adventure</h1>
         </div>
-        <div className='PhotoCrease   bg-blue-900 flex flex-1 flex-col rounded-bl-2xl items-left justify-start'>
-          <img src={Zebra} className="Scaler  rounded-bl-2xl" />
+        <div className='flex justify-center items-center shadow-2xl shadow-black   h-[200px]   bg-white flex flex-1 flex-col rounded-2xl items-left justify-start'>
+          <h1 className="text-center text-4xl md:text-3xl  " ><span  className="font-bold" > 24hrs</span> Guidance</h1>
         </div>
-        <div className='PhotoCrease   bg-blue-900 flex flex-1 flex-col items-left rounded-br-2xl justify-start'>
-          <img src={Jeep} className="Scaler  rounded-br-2xl" />
+        <div className='flex justify-center items-center shadow-2xl shadow-black   h-[200px]  bg-white flex flex-1 flex-col items-left rounded-2xl justify-start'>
+          <h1 className="text-center text-4xl  md:text-3xl  "> <span className="font-bold">Flexible</span>  Date</h1>
         </div>
        
     </div>
