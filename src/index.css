@@ -98,3 +98,23 @@
   width: 100%;
 }
 
+.icon{
+  font-size:80px !important ;
+  color:#519e51 ;
+
+}
+
+
+.two-block{
+  height: 150px;
+}
+
+.DarkSwiper{
+  transition: ease-in-out 0.5s all;
+  background-color:rgba(0, 0, 0, 0.788);
+}
+
+.DarkSwiper:hover{
+  transition: ease-in-out 0.5s all;
+  background-color: transparent;
+}
