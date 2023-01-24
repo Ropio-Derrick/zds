@@ -127,3 +127,13 @@
   color: white;
   font-size: 16px;
 }
+
+.rotator{
+  transition: all  ease-in-out 1s  ;
+}
+
+.rotator:hover{
+  color: black;
+  transform: rotateY(360deg);
+  transition: all  ease-in-out 1s  ;
+}

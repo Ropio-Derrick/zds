@@ -6,7 +6,7 @@ import Three from "../../Images/jeep.jpg"
 
 function tours() {
   return (
-    <div className='mx-0 md:mx-0 xs:mx-4 sm:px-4 ' >
+    <div className='mx-[50px] md:mx-50px xs:mx-4 sm:mx-4 ' >
         <h1 className=" mx-[50px] md:mx-[50px]  xs:mx-4  text-left  text-5xl md:text-3xl sm:text-3xl xs:text-3xl  text-[#519e51]" > <span className="font-bold text-black " > New</span> Destinations</h1>
 
         <div className=' shadow-2xl shadow-black  h-[300px] xs:h-auto sm:h-auto mb-[300px] grid grid-cols-3  '>
