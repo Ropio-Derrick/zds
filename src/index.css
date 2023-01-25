@@ -40,6 +40,26 @@
 }
 
 
+.Btnprimary{
+  transition:all ease-in-out 0.5s ;
+  background-color:#519e51 ;
+  color: black;
+  width: 160px;
+  height: 50px;
+  border: 2px solid #519e51;
+  border-radius: 50px;
+  color: white;
+}
+
+.Btnprimary:hover{
+  transition:all ease-in-out 0.5s ;
+  background-color:white ;
+  color: black;
+  border: 2px solid #519e51;
+  color:#519e51 ;
+  
+}
+
 
 
 .transition{
@@ -120,12 +140,31 @@
 }
 
 .button{
-  background-color: white;
+  background-color:#519e51;
   box-shadow: #519e51 inset 1px 1px 30px 30px;
-  border-radius: 20px;
+  border-radius: 50px;
   text-align: center;
   color: white;
+  width: 160px;
+  height: 50px;
   font-size: 16px;
+  animation: play 1s ease-in-out infinite  ;
+}
+
+@keyframes play {
+ 
+  25%{
+  transition: ease-in-out 0.5s all;
+
+    transform: rotateZ(5deg);
+  } 
+ 
+  75%{
+    transform: rotateZ(-5deg);
+  transition: ease-in-out 0.5s all;
+
+  }  
+ 
 }
 
 .rotator{
@@ -136,4 +175,22 @@
   color: black;
   transform: rotateY(360deg);
   transition: all  ease-in-out 1s  ;
+}
+
+.Breaker1{
+  background-image: url("./Images/home2.jpg");
+  height: 400px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.greenMorphism{
+  background-color:#000000b4 ;
+}
+
+.Brecons{
+  font-size: 50px !important;
 }

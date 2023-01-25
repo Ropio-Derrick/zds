@@ -9,7 +9,7 @@ function tours() {
     <div className='mx-[50px] md:mx-50px xs:mx-4 sm:mx-4 ' >
         <h1 className=" mx-[50px] md:mx-[50px]  xs:mx-4  text-left  text-5xl md:text-3xl sm:text-3xl xs:text-3xl  text-[#519e51]" > <span className="font-bold text-black " > New</span> Destinations</h1>
 
-        <div className=' shadow-2xl shadow-black  h-[300px] xs:h-auto sm:h-auto mb-[300px] grid grid-cols-3  '>
+        <div className=' shadow-2xl shadow-black  h-[300px] xs:h-auto sm:h-auto mb-[50px] grid grid-cols-3  '>
             <div className='group col-span-2 md:xs:col-span-2 xs:col-span-full sm:col-span-full  h-[450px] md:h-[570px] sm:h-[250px] xs:h-[250px] relative'>
                 <img src={Main} className="  h-full w-full" />
                 <div className=' flex-col  px-[100px]  md:px-[100px] xs:px-4  flex justify-center  items-left sm:items-center xs:items-center  top-0 left-0 h-full w-full absolute DarkSwiper'>
