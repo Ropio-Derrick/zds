@@ -113,9 +113,19 @@
 }
 
 .background{
-  background-repeat: no-repeat;
-  background-size: contain;
+  object-fit:cover ;
+  object-position: left center;
   width: 100%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .background{
+    object-fit:cover ;
+    object-position: right top;
+    width: 100%;
+  
+  }
 }
 
 .icon{
@@ -193,4 +203,13 @@
 
 .Brecons{
   font-size: 50px !important;
+}
+
+.Line{
+  outline: none;
+  width: 100px;
+  color: white !important;
+  border: 2px solid white;
+  font-weight: 600px;
+
 }
