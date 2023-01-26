@@ -213,3 +213,10 @@
   font-weight: 600px;
 
 }
+
+.tratext{
+
+  font-weight: 900;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;  
+}

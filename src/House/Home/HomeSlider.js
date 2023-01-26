@@ -46,10 +46,7 @@ function HomeSlider() {
                 <div className="flex flex-row">
                   <hr className="Line" />
                 </div>
-                <h1 className=" text-white text-center text-6xl md:text-6xl sm:text-4xl xs:text-4xl font-black">
-                  Wild
-                </h1>
-
+                <h1 className='tratext group-hover:opacity-0  text-6xl md:text-6xl sm:text-4xl xs:text-4xl   transition ease-in-out delay-500'>Your Dream<br/>Vaccation</h1>
               </div>
             </span>
           </div>
@@ -61,9 +58,7 @@ function HomeSlider() {
                 <div className="flex flex-row">
                   <hr className="Line" />
                 </div>
-                <h1 className=" text-white text-center text-6xl md:text-6xl sm:text-4xl xs:text-4xl font-black">
-                  Cool Waters
-                </h1>
+                <h1 className='tratext group-hover:opacity-0  text-6xl md:text-6xl sm:text-4xl xs:text-4xl   transition ease-in-out delay-500'>Your Dream<br/>Vaccation</h1>
 
               </div>
             </span>
@@ -77,9 +72,8 @@ function HomeSlider() {
                 <div className="flex flex-row">
                   <hr className="Line " />
                 </div>
-                <h1 className=" text-white text-center text-6xl md:text-6xl sm:text-4xl xs:text-4xl font-black">
-                  Experience
-                </h1>
+                <h1 className='tratext group-hover:opacity-0  text-6xl md:text-6xl sm:text-4xl xs:text-4xl   transition ease-in-out delay-500'>Your Dream<br/>Vaccation</h1>
+
 
               </div>
             </span>

@@ -12,8 +12,8 @@ function tours() {
         <div className=' shadow-2xl shadow-black  h-[300px] xs:h-auto sm:h-auto mb-[50px] grid grid-cols-3  '>
             <div className='group col-span-2 md:xs:col-span-2 xs:col-span-full sm:col-span-full  h-[450px] md:h-[570px] sm:h-[250px] xs:h-[250px] relative'>
                 <img src={Main} className="  h-full w-full" />
-                <div className=' flex-col  px-[100px]  md:px-[100px] xs:px-4  flex justify-center  items-left sm:items-center xs:items-center  top-0 left-0 h-full w-full absolute DarkSwiper'>
-                    <h1 className='text-white group-hover:opacity-0 transition ease-in-out delay-500  text-4xl font-black'>Your Dream<br/>Vaccation</h1>
+                <div className=' flex-col  px-[50px]  md:px-[50px] xs:px-4  flex justify-center  items-left sm:items-center xs:items-center  top-0 left-0 h-full w-full absolute DarkSwiper'>
+                    <h1 className='tratext group-hover:opacity-0  text-6xl transition ease-in-out delay-500'>Your Dream<br/>Vaccation</h1>
                     <p className=" xs:hidden sm:hidden font-lg group-hover:opacity-0 text-[#f2f2f290] md:text-left sm:text-center xs:text-center  transition ease-in-out delay-500">One of the most popular tourist destinations in Africa, Diani is well-established as one of the best wildlife-viewing destinations in the world.</p>
                     <h1 className='animate-ping text-center text-white mt-8 group-hover:opacity-0 transition ease-in-out delay-500 text-left md:text-left sm:text-center xs:text-center  text-4xl font-semibold'>DIA<span className='font-light'>NI</span> </h1>
 

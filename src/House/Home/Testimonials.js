@@ -9,11 +9,11 @@ function Testimonials() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   return (
-    <div className=' mb-20 mx-[100px] md:mx-[100px] xs:mx-4 sm:mx-4 gap-4 grid grid-cols-2 md:grid grid-cols-2 sm:grid grid-cols-1 xs:grid grid-cols-1' >
+    <div className=' mb-20 mx-[100px] md:mx-[100px] xs:mx-4 sm:mx-4 gap-4 grid grid-cols-2 md:grid-cols-2  md:grid grid-cols-2 sm:grid grid-cols-1 xs:grid grid-cols-1' >
         <div className='flex flex-col justify-left items-left'>
-            <h2 className="text-2xl md:text-2xl sm:text-xl xs:text-xl mb-4 md:mb-4 sm:mb-[7px] xs:mb-[7px] text-center">TESTIMONIALS</h2>
-            <h2 className="text-4xl Primary md:text-3xl sm:text-3xl xs:text-3xl mb-4 md:mb-4 sm:mb-[7px] xs:mb-[7px] font-bold text-center">Message From Adventurers</h2>
-            <p className="w-[80%] md:w-[80%] xs:w-full sm:w-full text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor nunc non neque euismod porttitor. Nullam lacus est, tincidunt eget sapien eget, maximus c
+            <h2 className=" w-full text-2xl md:text-2xl sm:text-xl xs:text-xl mb-[10px] md:mb-[10px] sm:mb-[7px] xs:mb-[7px] text-right">TESTIMONIALS</h2>
+            <h2 className="w-full  text-4xl Primary md:text-3xl sm:text-3xl xs:text-3xl mb-[10px] md:mb-[10px]sm:mb-[7px] xs:mb-[7px] font-bold text-right">Message From Adventurers</h2>
+            <p className="w-full text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor nunc non neque euismod porttitor. Nullam lacus est, tincidunt eget sapien eget, maximus c
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>  
         <div className='flex flex-col justify-left items-left h-[100%] w-full bg-white'>
