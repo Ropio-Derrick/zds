@@ -1,50 +1,7 @@
 // import React ,{useState} from 'react'
+import React from "react"
+import { ReactDOM } from "react"
 import {Link } from 'react-router-dom'
-
-// const Navigationbar = () => {
-
-    
-
-//     // Navbar Color Changer
-//     const [colorChange, setColorchange] = useState(false);
-//     const changeNavbarColor = () =>{
-//        if(window.scrollY >= 80){
-//          setColorchange(true);
-//        }
-//        else{
-//          setColorchange(false);
-//        }
-//     };
-//     window.addEventListener('scroll', changeNavbarColor);
-
-//   return (
-
-//     <div className="bg-transparent flex flex-row justify-between items-center  ">
-//       <div className="Flex-1">
-//         <h1 className='primary font-3xl'>ZPS Adventures</h1>
-//       </div>
-//       <div  className='flex-3'>
-//                 <Link to="/" className='no-underline text-lg primary ' >
-//                   Home</Link>
-//                 <Link to="/about"   >
-//                   Safari</Link>
-//                 <Link to="/contact"  >
-//                  Safari & Style</Link>
-//                 <Link to="/about" >
-//                    About</Link>
-//                 <Link to="/contact"   >
-//                   Contact</Link>
-//       </div>
-      
-//     </div>
-//   );
-// }
-
-// export default Navigationbar;
-
-
-
-
 import { useState } from "react"
 import {HiMenuAlt4} from "react-icons/hi"
 import {AiOutlineClose} from "react-icons/ai"
@@ -60,7 +17,7 @@ const NavbarItem =({title,classProps})=>{
 const Navbar =()=>{
 
     const [toggleMenu,setToggleMenu] = useState(false)
-
+    
     return(
         <nav className="w-full fixed z-50 flex md:justify-center bg-white justify-between items-center p-20  sm:p-[5px] xs:p-[5px] ">
             <div className="md:flex-[0.5] flex-initial justify-center items-center p-0 m-0 ">
@@ -70,10 +27,63 @@ const Navbar =()=>{
                 {[
                   <Link to="/" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 ' >
                      Home</Link>,
-                   <Link to="/about" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 '  >
-                     Safari</Link>,
+                  <div class="relative group">
+                    <button class="flex flex-row items-center w-full  py-4 no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat">
+                        <span>Safari</span>
+                    </button>
+                    <div class=" absolute hidden bg-grey-200 group-hover:block">
+                        
+                        <div class="px-4  pt-8 pb-4 backdrop-blur-lg Bglight border-t-4 border-black shadow-2xl rounded-b-[30px]">
+                          <div class="font-medium tracking-wider grid grid-cols-1 text-sm w-[300px] ">
+                            <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4  border-b-[1px] rounded-t-[15px]   uppercase no-underline  hover:bg-white duration-200 ease-in-out delay-100 ' >
+                              Coast Safaris
+                            </Link>
+                            <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
+                             Coastal excursions
+                            </Link>
+                            <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
+                              Nairobi Safaris
+                            </Link>
+                            <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline e uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
+                              Safari From Nairobi To Coast
+
+                            </Link>
+                            <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
+                              Safari From Coast To Nairobi
+                            </Link>
+                          </div>
+                        </div>
+                    </div>
+                  </div>  ,
+                  <div class="relative group">
+                  <button class="flex flex-row items-center w-full  py-4 no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat">
+                      <span>Destination</span>
+                  </button>
+                  <div class="absolute z-10 hidden bg-grey-200  group-hover:block">
+                      
+                      <div class="px-2 pt-2 pb-4 bg-white shadow-2xl rounded-b-[30px] ">
+                        <div class="grid grid-cols-1 gap-[7px] w-[200px] ">
+                          <Link to="/contact" className='no-underline text-lg primary hover:text-black duration-200 ease-in-out delay-100 ' >
+                            Destination
+                          </Link>
+                          <Link to="/contact" className='no-underline text-lg  primary hover:text-black duration-200 ease-in-out delay-100 ' >
+                            Destination
+                          </Link>
+                          <Link to="/contact" className='no-underline text-lg  primary hover:text-black duration-200 ease-in-out delay-100 ' >
+                            Destination
+                          </Link>
+                          <Link to="/contact" className='no-underline text-lg  primary hover:text-black duration-200 ease-in-out delay-100 ' >
+                            Destination
+                          </Link>
+                          <Link to="/contact" className='no-underline text-lg  primary hover:text-black duration-200 ease-in-out delay-100 ' >
+                            Destination
+                          </Link>
+                        </div>
+                      </div>
+                  </div>
+                </div>  ,
                    <Link to="/contact" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 ' >
-                    Safari & Style</Link>,
+                      Destination</Link>,
                    <Link to="/about" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 ' >
                       About</Link>,
                    <Link to="/contact" className='no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 '  >

@@ -3,6 +3,9 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  variants: {
+    display: ['responsive', 'group-hover', 'group-focus'],
+   },
   theme: {
     screens: {
       'xs': '0px',
