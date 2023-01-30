@@ -3,11 +3,11 @@ import { Routes,Route } from "react-router-dom";
 import Home from "./House/Home/Home";
 import About from "./House/About/Index"
 import Contact from './House/Contact/Index'
-import Navbar from "./House/Navbar/Navbar"
 import "./App.css"
 import Footer from "./House/Footer/Footer";
 import Loader from "./loader";
-
+import Navbar from "./House/Navbar/Navbar";
+import CoastSafari from "./House/Safari/CoastSafari/CSafari"
 
 let App = ()=>{
 
@@ -28,11 +28,12 @@ let App = ()=>{
       {
         loading ? <Loader/> : 
         <div>
-          <Navbar className="NavbarSet" />
+          <Navbar/>
           <Routes>
             <Route path="/" element={ <Home/> } />
             <Route path="about" element={ <About/> } />
             <Route path="contact" element={ <Contact/> } />
+            <Route path="CoastSafari" element={ <CoastSafari/> } />
 
           </Routes>
           <Footer/>

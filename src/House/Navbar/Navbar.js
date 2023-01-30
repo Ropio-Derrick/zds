@@ -35,7 +35,7 @@ const Navbar =()=>{
                         
                         <div class="px-4  pt-8 pb-4 backdrop-blur-lg Bglight border-t-4 border-black shadow-2xl rounded-b-[30px]">
                           <div class="font-semibold tracking-wider grid grid-cols-1 text-sm w-[350px] ">
-                            <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4  border-b-[1px] rounded-t-[15px]   uppercase no-underline  hover:bg-white duration-200 ease-in-out delay-100 ' >
+                            <Link to="/CoastSafari" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4  border-b-[1px] rounded-t-[15px]   uppercase no-underline  hover:bg-white duration-200 ease-in-out delay-100 ' >
                               Coast Safaris
                             </Link>
                             <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
@@ -96,28 +96,6 @@ const Navbar =()=>{
               <button class="uppercase flex flex-row items-center w-full  py-4 no-underline text-lg primary hover:text-black duration-300 ease-in-out delay-300 bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-montserrat">
                   <span>About Us</span>
               </button>
-              <div class=" absolute hidden bg-grey-200 ml-[-300px] group-hover:block">
-                  
-                  <div class="px-4  pt-8 pb-4 backdrop-blur-lg Bglight border-t-4 border-black shadow-2xl rounded-b-[30px]">
-                    <div class="font-semibold tracking-wider grid grid-cols-1 text-sm w-[400px] ">
-                      <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4  border-b-[1px] rounded-t-[15px]   uppercase no-underline  hover:bg-white duration-200 ease-in-out delay-100 ' >
-                        Coast Safaris
-                      </Link>
-                      <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
-                       Coastal excursions
-                      </Link>
-                      <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
-                        Nairobi Safaris
-                      </Link>
-                      <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline e uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
-                        Safari From Nairobi To Coa
-                      </Link>
-                      <Link to="/contact" className='primary1 border-[#fff20] py-[5px] mt-[2px] px-4 border-b-[1px] rounded-t-[15px]  no-underline uppercase hover:bg-white duration-200 ease-in-out delay-100 ' >
-                        Safari From Coast To Nairobi
-                      </Link>
-                    </div>
-                  </div>
-              </div>
             </div>  ,   
 
             
@@ -134,7 +112,7 @@ const Navbar =()=>{
                     }
                     {toggleMenu && (
                         <ul className="z-10 fixed top-0 -right-2  p-3 width-screen h-screen shadow-2xl md:hidden list-none
-                        flex flex-col justify-start items-end round-md  bg-[#519e51] text-white animate-slide-in duration-300 ease-in-out delay-300
+                        flex flex-col justify-start items-end round-md  bg-[#519e51] text-white animate-slide-down duration-300 ease-in-out delay-300
                         " >
                             <li className="text-xl w-full my-2 " >
                                 <AiOutlineClose onClick={()=>setToggleMenu(false) } />
